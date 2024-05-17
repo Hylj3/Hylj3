@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lomake</title>
+    <style>
+        a{
+            color: aqua;
+        }
+        h1 {
+            color: darkorchid;
+        }
+        body {
+            background-color: black;
+        }
+        form {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+        }
+        label, input {
+            margin: 10px 0;
+        }
+        button {
+            background-color: darkorchid;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var age = document.getElementById('age').value;
+            
+            if (name == "" || email == "" || age == "") {
+                alert("Kaikki kentät on täytettävä!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <li><a href="index.html" title="index">index.html</a></li>
+    <h1>Täytä lomake!</h1>
+    <form>
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Sähköposti:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="age">Ikä:</label>
+        <input type="number" id="age" name="age">
+        
+        <button type="submit">Lähetä</button>
+    </form>
+</body>
+</html>

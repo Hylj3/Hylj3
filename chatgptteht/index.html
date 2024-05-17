@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ohjelmoinnin maailma</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color: darkmagenta;
+        }
+        a {
+            color: aqua;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+        }
+        ol {
+            color: white;
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tervetuloa ohjelmoinnin maailmaan!</h1>
+    <p>Tämä on esittelysivu HTML:stä, CSS:stä ja JavaScriptistä.</p>
+    <ol>
+        <li><a href="index.html" title="tehtävät 1, 2 ja 3">Teht1, Teht2, Teht3</a></li>
+        <li><a href="Lomake.html" title="tehtävät 4 ja 5">Teht4, Teht5</a></li>
+        <li><a href="Kello.html" title="tehtävät 6">Teth6</a></li>
+        <li><a href="Galleria.html" title="tehtävä 7">Teht7</a></li>
+        <li><a href="Todolist.html" title="tehtävä 8">Teht 8</a></li>
+    </ol>
+    <button id="alertButton">Paina minua!</button>
+    <script>
+        document.getElementById('alertButton').addEventListener('click', function() {
+            alert('Hei maailma!');
+        });
+    </script>
+</body>
+</html>
